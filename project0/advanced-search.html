@@ -10,28 +10,69 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Material+Icons&display=swap" rel="stylesheet"> 
         
         <link href="./css/reset.css" rel="stylesheet">
-        <link href="./css/styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="./components/titles.css" rel="stylesheet">
+        <link href="./components/html.css" rel="stylesheet">
+        <link href="./components/header.css" rel="stylesheet">
+        <link href="./components/form.css" rel="stylesheet">
+        <link href="./components/input.css" rel="stylesheet">
+        <link href="./components/button.css" rel="stylesheet">
+        <link href="./components/search-bar.css" rel="stylesheet">
         
         <title>CS50X</title>
     </head>
     <body>
         <header>
-            <nav>
-                <a href="" onclick="history.back()">Google Search</a>
+            <nav class="header-advanced">
+                <a href="" onclick="history.back()">Google</a>
             </nav>
+
+            <h2 class="advanced-title">Advanced Search</h2>
+            <hr style="height:0px;border:1px solid #f28b82;"/>
         </header>
 
-        <h1>Google</h1>
+        <form class="advanced-search-form" action="https://www.google.com/search" method="get">
+            <nav class="container">
+                <div class="advanced-title"><a>Find pages with...</a></div>
+                <div class="advanced-title-end">To do this in the search box</div>
+            </nav>
 
-        <form class="advanced-search-form" action="https://www.google.com/images" method="get">
-            <table>
-                <th>All these words</th><input class="all-words" type="text">
-                <th>This exact word or phrase</th><input All these words>
-    
-            </table>
-            <input class="search-box-main" type="text" name="q">
-            <input type="submit" value="Advanced Search">
-        </form>
+            <div class="advanced-fields">
+                <div class="adv-lines">
+                    <div class="adv-line-text">all these words:
+                    </div>
+                    <div class="adv-line-text">this exact word or phrase:
+                    </div>
+                    <div class="adv-line-text">any of these words:
+                    </div>
+                    <div class="adv-line-text">none of these words:
+                    </div>
+                </div>
+                <div class="adv-lines">
+                    <div class="adv-line-input">
+                        <input clas="" type="text" name="as_q" size="100"> 
+                    </div>
+                    <div class="adv-line-input">
+                        <input type="text" name="as_epq" size="100"> 
+                    </div>
+                    <div class="adv-line-input">
+                        <input type="text" name="as_oq" size="100"> 
+                    </div>
+                    <div class="adv-line-input">
+                        <input type="text" name="as_eq" size="100"> 
+                    </div>
+                </div>
+                <div class="adv-lines">
+                    <div class="adv-line-text-end"><span class="example-text">Type the important words:</span> tricolor rat terrier</div>
+                    <div class="adv-line-text-end"><span class="example-text">Put exact words in quotes:</span> "rat terrier"</div>
+                    <div class="adv-line-text-end"><span class="example-text">Type OR between all the words you want:</span> miniature OR standard</div>
+                    <div class="adv-line-text-end"><span class="example-text">Put a minus sign just before words you don't want:</span> -rodent, -"Jack Russell"</div>
+                </div>
+            </div>
+
+            <div class="adv-button">
+                <button id="button-adv" type="submit">Advanced Search</button>
+            </div>
+        </form> 
     </body>
 </html>
+

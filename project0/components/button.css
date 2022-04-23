@@ -1,0 +1,18 @@
+button {
+    height: 40px;
+    color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: none;
+    background-color: #303134;
+}
+
+.adv-button {
+    display: flex;
+    width: 815px;
+    justify-content: flex-end;
+}
+
+#button-adv {
+    background-color: rgb(7, 50, 118);
+}

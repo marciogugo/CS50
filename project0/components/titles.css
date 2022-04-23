@@ -1,0 +1,72 @@
+h1 {
+    padding-top: 40px; 
+    font-family: 'Open sans';
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1030px;
+}
+
+.advanced-title {
+    margin-left: 20px;
+    padding: 50px 0px 17px;
+    font-size: 23px;
+    padding-left: 20px;
+    text-align: left;
+    color: #f28b82;
+    box-shadow: #FFF;
+}
+
+.advanced-title, .advanced-title-end {
+    display: flex;
+    font-size: 20px;
+    height: 50px;
+    color: #FFF;
+}
+
+.advanced-title-end {
+    align-items: end;
+    font-size: 17px;
+}
+
+.advanced-fields {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.adv-lines {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.adv-line-text, .adv-line-text-end {
+    display: flex;
+    font-size: 15px;
+    height: 50px;
+    color: #fff;
+    align-items: center;
+}
+
+.adv-line-text-end {
+    font-size: 12px;
+}
+
+.adv-line-input {
+    display: flex;
+    font-size: 15px;
+    height: 50px;
+}
+
+.example-text {
+    padding-left: 10px;
+    color: #969ba1;
+}
