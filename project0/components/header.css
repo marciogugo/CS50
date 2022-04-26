@@ -1,7 +1,6 @@
 header {
     margin-top: 20px;
     justify-content: space-between;
-    color: red;
 }
 
 nav {
@@ -9,16 +8,15 @@ nav {
     align-items: center;
 }
 
-a {
-    color: #FFF;
+.header-links {
     text-decoration: none;
     align-items: center;
     margin-right: 30px;
+    color: blue;
 }
 
 .header-advanced {
     display: inline-block;
-    font-size: 25px;
     padding-left: 20px;
     text-align: left;
     color: #FFF;

@@ -28,6 +28,13 @@
     border: solid 1px #dcdcdc;
 }
 
+.search-bar:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 i#search-mark{
     margin-left: 10px;
     margin-right: 5px;
@@ -35,12 +42,19 @@ i#search-mark{
 }
 
 .search-box{
-    background: none;
-    color: white;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 34px;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
     font-size: 16px;
     width: 100%;
-    border: none;
-    outline: none;
 }
 
 i#search-localsee{
