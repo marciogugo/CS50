@@ -18,25 +18,30 @@
         <link href="./components/button.css" rel="stylesheet">
         <link href="./components/search-bar.css" rel="stylesheet">
         
-        <title>CS50X</title>
+        <title>CS50</title>
     </head>
     <body>
         <header>
             <nav>
-                <a href="image-search.html">Image Search</a>
-                <a href="advanced-search.html" >Advanced Search</a>
+                <a class="header-links" href="image-search.html">Image Search</a>
+                <a class="header-links" href="advanced-search.html" >Advanced Search</a>
             </nav>
         </header>
 
-        <h1>Google</h1>
+        <div class="top">
+            <div class="logo">
+                <img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272">
+            </div>
+        </div>
 
         <form class="search-form" action="https://www.google.com/search" method="get">
             <div class="search-bar">
                 <i class="material-icons md-21" id ="search-mark">search</i>
                 <input class="search-box" type="text" name="q">
+                <i class="material-icons md-21" id ="search-localsee">mic</i>
             </div>
-            <a><button type="submit" name="btnG">Google Search</button></a>
-            <a><button type="submit" name="btnI" value="1">I'm feeling lucky</button></a>
+            <a><button class="button" type="submit" name="btnG">Google Search</button></a>
+            <a><button class="button" type="submit" name="btnI" value="1">I'm feeling lucky</button></a>
         </form> 
 
     </body>
